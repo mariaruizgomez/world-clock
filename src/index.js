@@ -1,11 +1,11 @@
 function updateTime() {
-  let lasVegasElement = document.querySelector("#las-vegas");
-  if (lasVegasElement) {
-    let lasVegasDateElement = lasVegasElement.querySelector(".date");
-    let lasVegasTimeElement = lasVegasElement.querySelector(".time");
-    let lasVegasTime = moment().tz("America/Los_Angeles");
-    lasVegasDateElement.innerHTML = lasVegasTime.format("MMMM Do YYYY");
-    lasVegasTimeElement.innerHTML = lasVegasTime.format(
+  let newYorkElement = document.querySelector("#new-york");
+  if (newYorkElement) {
+    let newYorkDateElement = newYorkElement.querySelector(".date");
+    let newYorkTimeElement = newYorkElement.querySelector(".time");
+    let newYorkTime = moment().tz("America/New_York");
+    newYorkDateElement.innerHTML = newYorkTime.format("MMMM Do YYYY");
+    newYorkTimeElement.innerHTML = newYorkTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
