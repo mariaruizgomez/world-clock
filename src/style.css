@@ -74,3 +74,6 @@ footer,
   bottom: 0;
   z-index: -1;
 }
+#show-all {
+  color: #473024;
+}
